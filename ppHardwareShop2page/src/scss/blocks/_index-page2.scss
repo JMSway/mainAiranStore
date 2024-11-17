@@ -1,0 +1,12 @@
+.main_2page_section-1_all {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; // Отступы между элементами, можно настроить по желанию
+    justify-content: center; // Центрирование по горизонтали
+  }
+  
+  .main_2page_section-1 {
+    display: flex;
+    flex-direction: column; // Если элементы внутри должны быть выровнены по колонке
+    align-items: center; // Центрирование внутренних элементов по центру
+  }

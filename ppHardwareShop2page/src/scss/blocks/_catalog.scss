@@ -1,0 +1,130 @@
+.catalog{
+    margin-bottom: 60px;
+    .catalog-page{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        gap: 16px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        .catalog-page-active{
+            color: $color-yellow;
+        }
+    }
+
+    .catalog_inner{
+        display: grid;
+        grid-template-columns:repeat(3, 420px) ;
+        grid-template-rows: repeat(2, 214px);
+        gap: 28px;
+
+
+    }
+    .catalog_inner-card{
+        @include customBoxShadowCard
+
+
+    }
+
+    .catalog_inner-card-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            color: $color-text;
+        }
+    }
+    .catalog_inner-sec1{
+        grid-row: 1 / -1;
+        position: relative;
+
+        background-image: url('./../img/catalog/card1.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        .title-h2{
+            position: relative;
+            top: 20px;
+            left: 16px;
+        }
+        .catalog_inner-card-link{
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+    .catalog_inner-sec2 {
+         position: relative;
+
+        background-image: url('./../img/catalog/card2.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        .title-h2{
+            position: relative;
+            top: 20px;
+            left: 325px;
+        }
+         .catalog_inner-card-link-min{
+             position: absolute;
+             bottom: 15px;
+             right: 15px;
+         }
+    }
+    .catalog_inner-sec3 {
+
+        background-image: url('./../img/catalog/card4.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        position: relative;
+        .title-h2{
+            width: 220px;
+            position: relative;
+            top: 20px;
+            left: 16px;
+        }
+        .catalog_inner-card-link-min{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+        }
+    }
+    .catalog_inner-sec4 {
+
+        background-image: url('./../img/catalog/card3.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        position: relative;
+        .title-h2{
+            position: relative;
+            top: 20px;
+            left: 16px;
+            width: 220px;
+        }
+        .catalog_inner-card-link-min{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+        }
+    }
+    .catalog_inner-sec5 {
+
+        background-image: url('./../img/catalog/card5.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: relative;
+        .title-h2{
+            position: relative;
+            top: 20px;
+            left: 16px;
+        }
+        .catalog_inner-card-link-min{
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+
+
+}

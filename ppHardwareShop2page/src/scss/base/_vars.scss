@@ -1,0 +1,80 @@
+//mixin
+@mixin customHoverEffect{
+    position: relative;
+
+    &::before {
+        content: '';
+        bottom: -9px;
+        left: 0;
+        width: 0;
+        position: absolute;
+        height: 2px;
+        background-color: $color-yellow !important;
+        transition: width 0.3s ease-in-out;
+    }
+    &:hover::before {
+        width: 100%;
+    }
+}
+@mixin customHoverEffect2{
+    position: relative;
+
+    &::before {
+        content: '';
+        bottom: -9px;
+        left: 0;
+        width: 0;
+        position: absolute;
+        height: 2px;
+        background-color: $color-header-top !important;
+        transition: width 0.3s ease-in-out;
+    }
+    &:hover::before {
+        width: 100%;
+    }
+}
+@mixin customBoxShadow {
+    transition: box-shadow 0.3s ease-in-out;
+    &:hover {
+        box-shadow: 0 4px 8px rgba(2, 0, 103, 0.3);
+    }
+}
+@mixin customBoxShadow {
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+}
+@mixin customBoxShadowCard {
+    box-shadow: 0 20px 50px 0 rgba(60, 60, 59, 0.07);
+    transition: box-shadow 0.2s ease-in-out;
+    &:hover{
+        box-shadow: 0 20px 50px 0 rgba(60, 60, 59, 0.10);
+    }
+    &:active{
+        box-shadow: 0 20px 50px 0 rgba(60, 60, 59, 0.10);
+    }
+}
+@mixin customActiveBtn {
+    &:active{
+        scale: 105%;
+    }
+}
+//responsive
+$max-375px: 375px;
+
+
+//color
+$color-text: #3C3C3B;
+$color-black: #000;
+$color-header-top: #4B565E;
+$color-white: #F9FAFB;
+$color-secondary-grau: #A1A0A0;
+$color-yellow: #F0BA4E;
+$color-red: #FA5D69;
+$color-green: #08C785;
+$color-placeholder: rgba(75, 86, 94, 0.6);
+
+
+

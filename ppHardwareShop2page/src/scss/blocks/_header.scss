@@ -1,0 +1,233 @@
+
+.burger_menu{
+    display: none;
+    background: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    &:hover{
+        background: $color-secondary-grau;
+    }
+    span{
+        position: absolute;
+        width: 16px;
+        height: 2px;
+        background: $color-black;
+        bottom: 15px;
+        right: 12px;
+        border-radius: 3px;
+    }
+    span:nth-child(1){
+        top: 14px;
+    }
+}
+//top
+.header_top {
+    background: $color-header-top;
+    .header_top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+        .logo_nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .logo {
+                padding-right: 40px;
+            }
+            .header_top-nav {
+
+                .header_top-nav-list {
+                    display: flex;
+                    gap: 25px;
+                    padding-right: 10px;
+                    .header_top-nav-title {
+
+                        .header_top-nav-link{
+                            @include customHoverEffect;
+                            color: $color-white;
+                            font-weight: 600;
+
+
+                        }
+                    }
+                }
+            }
+        }
+        .header-inner-top-info{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            a:first-child{
+                @include customHoverEffect;
+                padding: 5px 0 5px 5px;
+                font-weight: 500;
+                color: $color-white !important;
+            }
+            a:nth-child(2){
+                padding: 5px;
+            }
+            .header-inner-top-info-btn{
+                padding: 10px;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 13px;
+                background: transparent;
+                border: 1px solid $color-yellow;
+                @include customBoxShadow;
+                img{
+                    background: transparent;
+                }
+                span{
+                    color: $color-white;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    }
+}
+//bottom
+.header_bottom{
+    background: $color-yellow;
+    .header_bottom-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px 0;
+        .header_bottom-nav{
+            .header_bottom-list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                padding-left: 26px;
+                .header_bottom-link{
+                    @include customHoverEffect2;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: $color-text ;
+                }
+                .header_bottom-link-before{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        background-image: url(./../img/svg/burger-bottom.svg);
+                        background-repeat: no-repeat;
+                        background-color: transparent !important;
+
+                        top: -4px;
+                        left: -21px;
+                        width: 16px;
+                        height: 26px;
+
+                    }
+                }
+            }
+        }
+        .header_bottom-right-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            a:last-child{
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background-image: url('./../img/svg/map-pin.svg');
+                    background-repeat: no-repeat;
+                    width: 12px;
+                    height: 12px;
+                    left: -15px;
+                    top: 5px;
+                }
+            }
+            .header_bottom{
+                width: 400px;
+                height: 28px;
+                .header_bottom-input{
+                    width: 399px;
+                    height: 27px;
+                    background-color: transparent;
+                    outline: none;
+                    border-bottom: 1px solid $color-text;
+                    padding-right: 40px;
+                    position: relative;
+                    font-weight: 400;
+                    font-size: 16px;
+                    &::placeholder {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $color-placeholder;
+                    }
+                }
+                .header_bottom-btn{
+                    position: absolute;
+                    background: transparent;
+                    transform: translateX(-35px);
+                    padding: 0 10px 5px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $max-375px) {
+    .burger_menu{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    .header-inner-top-info-btn{
+        border: none;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

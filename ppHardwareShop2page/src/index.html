@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>AIRAN - Интернет-магазин строительных материалов</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="./img/page2/AI.svg" type="image/svg">
+    <a href="profile.html" id="profileLink" style="display:none;">Перейти в профиль</a>
+
+
+
+
+
+</head>
+<body>
+<header class="header none">
+            <div class="header_top">
+                <div class="wrapper">
+                    <div class="header_top-inner">
+                        <div class="logo_nav">
+                            <div class="burger_menu">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <img src="./img/logo.svg" alt="logo" class="logo">
+                            <nav class="header_top-nav mobile">
+                                <ul class="header_top-nav-list ">
+                                    <li class="header_top-nav-title"><a href="" class="header_top-nav-link">Главная</a></li>
+                                    <li class="header_top-nav-title"><a href="./3page.html" class="header_top-nav-link">О компании</a></li>
+                                    <li class="header_top-nav-title"><a href="./2page.html" class="header_top-nav-link">Каталог</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-inner-top-info">
+                            <a class="mobile" href="tel:+79650842929">+7 (965) 084-29-29</a>
+                            <a class="mobile">
+                                <img src="./img/svg/heart.svg" alt="heart">
+                            </a>
+                            <button class="header-inner-top-info-btn" type="button">
+                                <img src="./img/svg/basket.svg">
+                                <span>Пусто</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="wrapper">
+                    <div class="header_bottom-inner">
+                        <nav class="header_bottom-nav mobile">
+                            <ul class="header_bottom-list ">
+                                <li class="header_bottom-title"><a href="" class="header_bottom-link header_bottom-link-before">
+                                    Стройматериалы
+                                </a></li>
+                                <li class="header_bottom-title"><a href="" class="header_bottom-link">Инструменты</a></li>
+                                <li class="header_bottom-title"><a href="" class="header_bottom-link">Электрика</a></li>
+                                <li class="header_bottom-title"><a href="" class="header_bottom-link">Интерьер и одежда</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header_bottom-right-content">
+                            <form action="" class="header_bottom">
+                                <input type="text" class="header_bottom-input" placeholder="Поиск, например Круг зачистной ">
+                                <button class="header_bottom-btn">
+                                    <img src="./img/svg/magnifer.svg" alt="">
+                                </button>
+                            </form>
+                            <a href="">Москва</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main_title none">
+                <div class="wrapper">
+                    <div class="main_title-inner">
+                        <h1 class="title-h1">
+                            Инструмент для вашего бизнеса
+                        </h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popup-section">
+                <body>
+
+                <div id="login-container">
+                    <h2>Login</h2>
+                    <form id="login-form" onsubmit="handleLogin(event)" autocomplete="on">
+                        <!-- Поле для ввода имени пользователя -->
+                        <label for="username">Имя пользователя:</label>
+                        <input
+                                type="text"
+                                id="username"
+                                class="input-field"
+                                placeholder="Введите имя пользователя"
+                                name="username"
+                                required
+                                autocomplete="username"
+                        >
+
+                        <!-- Поле для ввода электронной почты -->
+                        <label for="email">Электронная почта:</label>
+                        <input
+                                type="email"
+                                id="email"
+                                class="input-field"
+                                placeholder="Введите вашу почту"
+                                name="email"
+                                required
+                                autocomplete="email"
+                        >
+
+                        <!-- Поле для ввода пароля -->
+                        <label for="password">Пароль:</label>
+                        <div class="password-container">
+                            <input
+                                    type="password"
+                                    id="password"
+                                    class="input-field"
+                                    placeholder="Введите пароль"
+                                    name="current-password"
+                                    required
+                                    minlength="8"
+                                    autocomplete="current-password"
+                            >
+                            <img
+                                    src="eye-icon.png"
+                                    alt="Показать/Скрыть пароль"
+                                    id="togglePassword"
+                                    onclick="togglePasswordVisibility()"
+                                    class="eye-icon"
+                            >
+                        </div>
+
+                        <!-- Кнопка для отправки формы -->
+                        <button type="submit" class="submit-button">Войти</button>
+                    </form>
+                </div>
+
+
+
+                <div id="profile-container" style="display: none;">
+                    <h2>Добро пожаловать!</h2>
+                    <p><strong>Имя пользователя:</strong> <span id="profile-username"></span></p>
+                    <p><strong>Электронная почта:</strong> <span id="profile-email"></span></p>
+                    <div class="button-group">
+                        <a href="profile.html" class="cabinet-button">Кабинет</a>
+                        <button onclick="handleLogout()" class="logout-button">Logout</button>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="mode-buttons">
+                    <button id="light-mode-btn" class="mode-btn" onclick="setLightMode()">Light Mode</button>
+                    <button id="dark-mode-btn" class="mode-btn" onclick="setDarkMode()">Dark Mode</button>
+                </div>
+
+
+
+
+                <div class="centered-buttons">
+                    <button class="subscribe-btn" onclick="openForm()">Подписаться</button>
+                </div>
+
+
+
+                <div id="popupForm" class="popup-form" style="display:none;" onclick="closeOnOutsideClick(event)">
+                    <div class="popup-form-content" onclick="event.stopPropagation();">
+                        <span class="popup-close" onclick="closeForm()">×</span>
+                        <form>
+                            <h3>Подписаться на новости</h3>
+                            <input type="text" id="name" placeholder="Ваше имя" required>
+                            <input type="email" id="email1" placeholder="Ваш email" required>
+                            <button type="submit" class="button_addBasket">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                </body>
+            </section>
+
+
+
+
+
+            <section class="assortment none">
+                <div class="wrapper">
+                    <div class="assortment-inner">
+                        <div class="assortment_cards">
+                            <img src="./img/assortment/group1.svg" alt="img">
+                            <div class="assortment_cards-info">
+                                <h2 class="title-h5">
+                                    Большой ассортимент
+                                </h2>
+                                <p class="assortment_cards-text">
+                                    строительных материалов всегда в наличии
+                                </p>
+                            </div>
+                        </div>
+                        <div class="assortment_cards">
+                            <img src="./img/assortment/group2.svg" alt="img">
+                            <div class="assortment_cards-info">
+                                <h2 class="title-h5">
+                                    Доставка стройматериалов
+                                </h2>
+                                <p class="assortment_cards-text">
+                                    в течении четырех часов или в любое удобное время
+                                </p>
+                            </div>
+                        </div>
+                        <div class="assortment_cards">
+                            <img src="./img/assortment/group3.svg" alt="img">
+                            <div class="assortment_cards-info">
+                                <h2 class="title-h5">
+                                    Многоуровневая система
+                                </h2>
+                                <p class="assortment_cards-text">
+                                    управления качеством по стандарту ISO 9001
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h1>Рейтинг и события</h1>
+                <div class="rating">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+            
+                <div class="time-display">
+                    <button id="show-time">Показать текущее время</button>
+                    <p id="time"></p>
+                </div>
+            
+                
+                <button id="load-more">Загрузить больше фактов</button>
+                <div id="facts-container" class="centered-facts"></div>
+
+                <audio id="click-sound" src="клик.mp3"></audio>
+            </section>
+
+
+
+
+
+            <section class="catalog none">
+                <div class="wrapper">
+                    <div class="catalog-page">
+                        <span class="catalog-page-active">1</span>
+                        <span class="">2</span>
+                        <span class="">3</span>
+                        <span class="">4</span>
+                        <span class="">5</span>
+                    </div>
+                    <div class="catalog_inner">
+                        <div class="catalog_inner-card catalog_inner-sec1 ">
+                            <h2 class="title-h2">
+                                Строительный отделочный инструмент
+                            </h2>
+                            <a href="#" class="catalog_inner-card-link">
+                                <button onclick="redirectToCatalog()" class="catalog-button">Перейти в каталог</button>
+                                <img src="./img/svg/arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                        <div class="catalog_inner-card catalog_inner-sec2">
+                            <h2 class="title-h2">
+                                Эмали
+                            </h2>
+                            <a href="#" class="catalog_inner-card-link catalog_inner-card-link-min">
+                                <p>Перейти в каталог</p>
+                                <img src="./img/svg/arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                        <div class="catalog_inner-card catalog_inner-sec3">
+                            <h2 class="title-h2">
+                                Лакокрасочные
+                                материалы
+                            </h2>
+                            <a href="#" class="catalog_inner-card-link catalog_inner-card-link-min">
+                                <p>Перейти в каталог</p>
+                                <img src="./img/svg/arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                        <div class="catalog_inner-card catalog_inner-sec4 ">
+                            <h2 class="title-h2">
+                                Пены, клеи и герметики
+                            </h2>
+                            <a href="#" class="catalog_inner-card-link catalog_inner-card-link-min">
+                                <p>Перейти в каталог</p>
+                                <img src="./img/svg/arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                        <div class="catalog_inner-card catalog_inner-sec5 ">
+                            <h2 class="title-h2">
+                                Розетки и выключатели
+                            </h2>
+                            <a href="#" class="catalog_inner-card-link catalog_inner-card-link-min">
+                                <p>Перейти в каталог</p>
+                                <img src="./img/svg/arrow.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="popular_product">
+                <div class="wrapper">
+                    <div class="product_top-text">
+                        <h3 class="title-h3">
+                            Популярные товары
+                        </h3>
+                        <span><a href="#" class="title-h3_showMore">Посмотреть все товары</a></span>
+                    </div>
+                    <div class="popular_product-list">
+                        <div class="popular_product-card">
+                            <img class="popular_product-card-img" src="./img/popular_product/product.png" alt="">
+                            <div class="popular_product-card-addProduct">
+                                <span class="popular_product-card_activeSale" >%</span>
+                                <img src="./img/svg/heart.svg" alt="headed">
+                            </div>
+                            <h6 class="title-h6">
+                                Круг зачистной 125х6х22
+                            </h6>
+                            <p class="product-article">
+                                Артикул 00004
+                            </p>
+                            <p class="cost-piece">Цена за штуку</p>
+                            <span class="cost-old-price">
+                                52 руб.
+                            </span>
+                            <span class="cost-price">
+                                48 руб.
+                            </span>
+                            <div class="popular_product-card-choose">
+                                <div class="popular_product-card-choose_count">
+                                    <p>Количество</p>
+                                    <span>-</span><span>1</span><span>+</span>
+                                </div>
+                                <div class="popular_product-card-choose-btn">
+                                    <button class=" button_addBasket">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="popular_product-card">
+                            <img class="popular_product-card-img" src="./img/popular_product/product.png" alt="">
+                            <div class="popular_product-card-addProduct">
+                                <span class="popular_product-card_activeSale">%</span>
+                                <img src="./img/svg/heart.svg" alt="headed">
+                            </div>
+                            <h6 class="title-h6">
+                                Круг зачистной 125х6х22
+                            </h6>
+                            <p class="product-article">
+                                Артикул 00004
+                            </p>
+                            <p class="cost-piece">Цена за штуку</p>
+                            <span class="cost-old-price">
+                                52 руб.
+                            </span>
+                            <span class="cost-price">
+                                48 руб.
+                            </span>
+                            <div class="popular_product-card-choose">
+                                <div class="popular_product-card-choose_count">
+                                    <p>Количество</p>
+                                    <span>-</span><span>1</span><span>+</span>
+                                </div>
+                                <div class="popular_product-card-choose-btn">
+                                    <button class=" button_addBasket">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="popular_product-card">
+                            <img class="popular_product-card-img" src="./img/popular_product/product.png" alt="">
+                            <div
+                                class="popular_product-card-addProduct popular_product-card-addProductTwice popular_product-card-addProductNew">
+                                <span class="popular_product-card-new" >Новинка</span>
+                                <span class="popular_product-card_activeSale">%</span>
+                                <img src="./img/svg/heart.svg" alt="headed">
+                            </div>
+                            <h6 class="title-h6">
+                                Круг зачистной 125х6х22
+                            </h6>
+                            <p class="product-article">
+                                Артикул 00004
+                            </p>
+                            <p class="cost-piece">Цена за штуку</p>
+                            <span class="cost-old-price">
+                                52 руб.
+                            </span>
+                            <span class="cost-price">
+                                48 руб.
+                            </span>
+                            <div class="popular_product-card-choose">
+                                <div class="popular_product-card-choose_count">
+                                    <p>Количество</p>
+                                    <span>-</span><span>1</span><span>+</span>
+                                </div>
+                                <div class="popular_product-card-choose-btn">
+                                    <button class=" button_addBasket">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="popular_product-card">
+                            <img class="popular_product-card-img" src="./img/popular_product/product.png" alt="">
+                            <div class="popular_product-card-addProduct popular_product-card-addProductNew">
+                                <span class="popular_product-card-new">Новинка</span>
+                                <img src="./img/svg/heart.svg" alt="headed">
+                            </div>
+                            <h6 class="title-h6">
+                                Круг зачистной 125х6х22
+                            </h6>
+                            <p class="product-article">
+                                Артикул 00004
+                            </p>
+                            <p class="cost-piece">Цена за штуку</p>
+                            <span class="cost-old-price">
+                                52 руб.
+                            </span>
+                            <span class="cost-price">
+                                48 руб.
+                            </span>
+                            <div class="popular_product-card-choose">
+                                <div class="popular_product-card-choose_count">
+                                    <p>Количество</p>
+                                    <span>-</span><span>1</span><span>+</span>
+                                </div>
+                                <div class="popular_product-card-choose-btn">
+                                    <button class="button_addBasket">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="coverage">
+                <div class="wrapper">
+                    <div class="coverage_inner">
+                        <h3 class="title-h3">Более 10 000 наименований</h3>
+                        <p>Инструмент для вашего бизнеса, разнообразных марок</p>
+                        <a class="title-h3_showMore" href="">Перейти в каталог</a>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section class="popular_product">
+                <div class="wrapper">
+                    <div class="product_top-text">
+                        <h3 class="title-h3">
+                            Популярные товары
+                        </h3>
+                        <span><a href="#" class="title-h3_showMore">Посмотреть все товары</a></span>
+                    </div>
+                    <div class="popular_product-list">
+                        <div class="popular_product-card">
+                            <img class="popular_product-card-img" src="./img/popular_product/product.png" alt="">
+                            <div class="popular_product-card-addProduct popular_product-card-addProductNew">
+                                <span class="popular_product-card-new">Новинка</span>
+                                <img src="./img/svg/heart.svg" alt="headed">
+                            </div>
+                            <h6 class="title-h6">
+                                Круг зачистной 125х6х22
+                            </h6>
+                            <p class="product-article">
+                                Артикул 00004
+                            </p>
+                            <p class="cost-piece">Цена за штуку</p>
+                            <span class="cost-old-price">
+                                52 руб.
+                            </span>
+                            <span class="cost-price">
+                                48 руб.
+                            </span>
+                            <div class="popular_product-card-choose">
+                                <div class="popular_product-card-choose_count">
+                                    <p>Количество</p>
+                                    <span>-</span><span>1</span><span>+</span>
+                                </div>
+                                <div class="popular_product-card-choose-btn">
+                                    <button class="button_addBasket">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="popular_product-card">
+                            <img class="popular_product-card-img" src="./img/popular_product/product.png" alt="">
+                            <div class="popular_product-card-addProduct popular_product-card-addProductNew">
+                                <span class="popular_product-card-new">Новинка</span>
+                                <img src="./img/svg/heart.svg" alt="headed">
+                            </div>
+                            <h6 class="title-h6">
+                                Круг зачистной 125х6х22
+                            </h6>
+                            <p class="product-article">
+                                Артикул 00004
+                            </p>
+                            <p class="cost-piece">Цена за штуку</p>
+                            <span class="cost-old-price">
+                                52 руб.
+                            </span>
+                            <span class="cost-price">
+                                48 руб.
+                            </span>
+                            <div class="popular_product-card-choose">
+                                <div class="popular_product-card-choose_count">
+                                    <p>Количество</p>
+                                    <span>-</span><span>1</span><span>+</span>
+                                </div>
+                                <div class="popular_product-card-choose-btn">
+                                    <button class="button_addBasket">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="popular_product-card">
+                            <img class="popular_product-card-img" src="./img/popular_product/product.png" alt="">
+                            <div class="popular_product-card-addProduct popular_product-card-addProductNew">
+                                <span class="popular_product-card-new">Новинка</span>
+                                <img src="./img/svg/heart.svg" alt="headed">
+                            </div>
+                            <h6 class="title-h6">
+                                Круг зачистной 125х6х22
+                            </h6>
+                            <p class="product-article">
+                                Артикул 00004
+                            </p>
+                            <p class="cost-piece">Цена за штуку</p>
+                            <span class="cost-old-price">
+                                52 руб.
+                            </span>
+                            <span class="cost-price">
+                                48 руб.
+                            </span>
+                            <div class="popular_product-card-choose">
+                                <div class="popular_product-card-choose_count">
+                                    <p>Количество</p>
+                                    <span>-</span><span>1</span><span>+</span>
+                                </div>
+                                <div class="popular_product-card-choose-btn">
+                                    <button class="button_addBasket">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="popular_product-card">
+                            <img class="popular_product-card-img" src="./img/popular_product/product.png" alt="">
+                            <div class="popular_product-card-addProduct popular_product-card-addProductNew">
+                                <span class="popular_product-card-new">Новинка</span>
+                                <img src="./img/svg/heart.svg" alt="headed">
+                            </div>
+                            <h6 class="title-h6">
+                                Круг зачистной 125х6х22
+                            </h6>
+                            <p class="product-article">
+                                Артикул 00004
+                            </p>
+                            <p class="cost-piece">Цена за штуку</p>
+                            <span class="cost-old-price">
+                                52 руб.
+                            </span>
+                            <span class="cost-price">
+                                48 руб.
+                            </span>
+                            <div class="popular_product-card-choose">
+                                <div class="popular_product-card-choose_count">
+                                    <p>Количество</p>
+                                    <span>-</span><span>1</span><span>+</span>
+                                </div>
+                                <div class="popular_product-card-choose-btn">
+                                    <button class="button_addBasket">
+                                        В корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </main>
+        <footer class="footer none">
+            <div class="footer__top">
+                <div class="wrapper">
+                    <div class="footer_inner-top">
+                        <div class="footer_top-contact">
+                            <img src="./img/logo.svg" alt="logo">
+                            <div class="footer_top-contact-list">
+                                <div class="footer_top-contact-tel">
+                                    <span>Контактный телефон</span>
+                                    <a href="tel:+78123090934" class="footer_top-contact-num">+ 7 (812) 309-09-34</a>
+                                    <a href="tel:+79650842909" class="footer_top-contact-num">+ 7 (965) 084-29-09</a>
+                                </div>
+                                <div class="footer_top-contact-mail">
+                                    <span>Электронная почта</span>
+                                    <a href="mailto:tustin78@mail.ru" class="footer_top-contact-mail1">tustin78@mail.ru</a>
+                                    <a href="mailto:info@tustin.ru" class="footer_top-contact-mail1">info@tustin.ru</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="footer_line"></span>
+                        <div class="footer_top-question">
+                            <h4 class="title-h4">
+                                Остались вопросы?
+                            </h4>
+                            <p>Узнавайте первым о скидках, предложениях и событиях еженедельно в своем почтовом ящике. Отпишитесь в любое время одним щелчком мыши.</p>
+                            <form action="" class="footer_top-question-form">
+                                <input  class="footer_top-question-input" type="text" placeholder=" &#xf0e0; ">
+                                <label class="footer_top-question-input-holder">Введите свою почту</label>
+                                <button class="footer_top-question-btn" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom ">
+                <div class="wrapper">
+                    <div class="footer_inner-bottom">
+                        <nav class="footer_top-nav">
+                            <ul class="footer_top-nav-list">
+                                <li class="footer_top-nav-title">
+                                    <a href="" class="footer_top-nav-link">Главная</a>
+                                </li>
+                                <li class="footer_top-nav-title">
+                                    <a href="" class="footer_top-nav-link">О компании</a>
+                                </li>
+                                <li class="footer_top-nav-title">
+                                    <a href="" class="footer_top-nav-link">Каталог</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="footer_inner-bottom-copy">
+                            <div class="footer_inner-bottom-copy_social">
+                                <span><img src="./img/svg/facebook.svg" alt="social"></span>
+                                <span><img src="./img/svg/youTube.svg" alt="social"></span>
+                                <span><img src="./img/svg/whatsApp.svg" alt="social"></span>
+                            </div>
+                            <span class="footer_inner-bottom-copy-yaer">
+                                2021-2022, EDE
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-section wrapper">
+                <h3 class="title-h3">Часто задаваемые вопросы</h3>
+                <div class="accordion">
+                    <h3 class="question">Как сделать заказ?</h3>
+                    <div class="answer" style="display:none;">
+                        <p>Чтобы сделать заказ, выберите товары и добавьте их в корзину.</p>
+                    </div>
+                    <h3 class="question">Какие у вас способы оплаты?</h3>
+                    <div class="answer" style="display:none;">
+                        <p>Мы принимаем банковские карты и электронные платежи.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Текущая дата и время -->
+            <div class="date-time-section wrapper">
+                <h3 class="title-h3">Текущая дата и время</h3>
+                <div id="weather-container"></div>
+                <div id="dateTime"></div>
+            </div>
+    </footer>
+
+
+        </footer>
+
+    </div>
+    <script>
+            function openForm() {
+                document.getElementById("popupForm").style.display = "flex";
+            }
+
+            function closeForm() {
+                document.getElementById("popupForm").style.display = "none";
+            }
+            function closeOnOutsideClick(event) {
+                if (event.target === document.getElementById("popupForm")) {
+                    closeForm();
+                }
+            }
+
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            if (name == "" || email == "") {
+                alert("Пожалуйста, заполните все поля.");
+                return false;
+            }
+            return true;
+        }
+
+        var questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', function() {
+                var answer = this.nextElementSibling;
+                if (answer.style.display === "none") {
+                    answer.style.display = "block";
+                } else {
+                    answer.style.display = "none";
+                }
+            });
+        });
+
+        function displayDateTime() {
+            var now = new Date();
+            document.getElementById("dateTime").innerHTML = now.toLocaleString();
+        }
+        setInterval(displayDateTime, 1000);
+
+        function changeBackgroundColor() {
+            var colors = ["#f4f4f4", "#e2e2e2", "#d3d3d3", "#c4c4c4"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+
+
+
+<script>
+    let currentColorIndex = 0;
+    const colors = ['#ff9999', '#99ccff', 'default']; // 'default' для возврата к исходному цвету
+    const originalColor = window.getComputedStyle(document.body).backgroundColor; // Сохраняем исходный цвет
+
+    function changeBackgroundColor() {
+        if (colors[currentColorIndex] === 'default') {
+            document.body.style.backgroundColor = originalColor; // Возвращаем исходный цвет
+        } else {
+            document.body.style.backgroundColor = colors[currentColorIndex];
+        }
+        currentColorIndex = (currentColorIndex + 1) % colors.length;
+    }
+</script>
+
+<script src="scss/app.js"></script>
+
+
+</body>
+</html>

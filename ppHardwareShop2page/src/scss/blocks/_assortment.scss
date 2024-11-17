@@ -1,0 +1,27 @@
+.assortment {
+    padding: 25px 0 60px;
+}
+
+.assortment-inner{
+    display: flex ;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+
+}
+.assortment_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.assortment_cards-info {
+}
+
+.assortment_cards-text {
+    font-weight: 500;
+    font-size: 18px;
+    color: $color-secondary-grau;
+}

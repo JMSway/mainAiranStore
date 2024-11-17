@@ -1,0 +1,21 @@
+.main_title{
+    height: 100vh;
+    background-image: url('./../img/main_title/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_title-inner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transform: translateY(257px);
+}
+.title-h1{
+    padding: 0 10px;
+    width: 540px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    color: $color-yellow;
+}

@@ -1,0 +1,499 @@
+/* Сброс стилей для списков и общих элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+}
+
+/* Основной стиль для шапки */
+.header {
+    background-color: #3f4a54;
+}
+
+/* Контейнер с ограниченной шириной */
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Верхняя часть шапки */
+.header_top {
+    padding: 10px 0;
+}
+
+.header_top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Логотип */
+.logo {
+    height: 40px;
+}
+
+/* Навигация в верхней части */
+.header_top-nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.header_top-nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header_top-nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Номер телефона, иконка избранного и корзина */
+.header-inner-top-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone-number {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.favorite-icon img, .header-inner-top-info-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.header-inner-top-info-btn {
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #f0b746;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.header-inner-top-info-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Нижняя часть шапки */
+.header_bottom {
+    background-color: #f0b746;
+    padding: 10px 0;
+}
+
+.header_bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header_bottom-list {
+    display: flex;
+    gap: 15px;
+}
+
+.header_bottom-link {
+    color: #3f4a54;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header_bottom-link:hover {
+    text-decoration: underline;
+}
+
+/* Поисковая строка и город */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header_bottom-input {
+    border: none;
+    border-bottom: 1px solid #3f4a54;
+    background-color: transparent;
+    color: #3f4a54;
+    padding: 5px;
+    width: 200px;
+    font-size: 14px;
+    outline: none;
+}
+
+.header_bottom-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header_bottom-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.city-link {
+    color: #3f4a54;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.profile-card {
+    margin-top: 20px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #f0b746;
+    margin-bottom: 15px;
+}
+
+.profile-card h3, .profile-card p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-btn {
+    background-color: #f0b746;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+}
+
+.profile-btn:hover {
+    background-color: #d4a130;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+/* Общий стиль для кнопок */
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Light Mode кнопка */
+button.light-mode {
+    background: linear-gradient(45deg, #ffc107, #ffa000);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.light-mode:hover {
+    background: linear-gradient(45deg, #ffca28, #ff9800);
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode кнопка */
+button.dark-mode {
+    background: linear-gradient(45deg, #616161, #424242);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.dark-mode:hover {
+    background: linear-gradient(45deg, #757575, #616161);
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Блок профиля */
+.profile-container {
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+/* Кнопки переключения темы */
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-contacts h3, .footer-questions h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-contacts p, .footer-questions p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.footer-form button {
+    background-color: #f4b400;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-form button:hover {
+    background-color: #333;
+    color: #f4b400;
+}
+
+.footer-bottom {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-nav {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-social a img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+.footer-social a {
+    display: inline-block;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #aaa;
+}
+
+
+/* дарк мод */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Стили кнопок темы */
+.theme-buttons {
+    margin-top: 15px;
+}
+
+.theme-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0ad4e;
+    color: #ffffff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.theme-btn:hover {
+    background-color: #ec971f;
+}
+
+/*ДЛЯ КРАСОТСЫ ДАРК КНОПОК */
+.mode-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.mode-btn {
+    background-color: #f9a825;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.mode-btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Блок профиля */
+.profile-container {
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Кнопки переключения темы */
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.profile-container {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+.profile-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.logout-btn {
+    background-color: red;
+}
+
+.mode-btn {
+    background-color: #808080;
+    margin-top: 10px;
+    border-radius: 5px;
+}

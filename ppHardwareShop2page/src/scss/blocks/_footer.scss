@@ -1,0 +1,234 @@
+.footer{
+    background: $color-header-top;
+    padding: 35px 0;
+    .footer__top{
+        padding-bottom:35px;
+        border-bottom: 1px solid #566169;
+    }
+}
+.footer_inner-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .footer-section1-info-mail {
+        display: flex;
+    }
+
+    .footer_line {
+        position: absolute;
+        right: 50%;
+        width: 1px;
+        height: 240px;
+        background: #566169;
+        z-index: 10;
+    }
+
+    .footer_top-contact img {
+        padding-bottom: 40px;
+    }
+
+    .footer_top-contact-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 92px;
+
+    }
+
+    .footer_top-contact-tel {
+        display: flex;
+        flex-direction: column;
+        padding-left: 35px;
+        gap: 8px 0;
+
+        span {
+            font-weight: 400;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url('./../img/svg/phone-active.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 24px;
+                width: 24px;
+                left: -32px;
+                top: -5px;
+            }
+        }
+
+        .footer_top-contact-num {
+            color: $color-white;
+        }
+    }
+
+    .footer_top-contact-mail {
+        display: flex;
+        flex-direction: column;
+        gap: 8px 0;
+
+        span {
+            font-weight: 400;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url('./../img/svg/mail.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 24px;
+                width: 24px;
+                left: -32px;
+                top: -5px;
+            }
+        }
+
+        .footer_top-contact-mail1 {
+            color: $color-white;
+        }
+    }
+}
+    //
+    .footer_top-question{
+        .title-h4{
+            font-weight: 700;
+            font-size: 18px;
+            color: $color-white;
+        }
+        p{
+            margin: 20px 0 35px;
+            max-width: 540px;
+            font-size: 14px;
+            line-height: 171%;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .footer_top-question-form {
+            position: relative;
+
+            .footer_top-question-input {
+                width: 100%;
+                height: 48px;
+                padding: 20px 150px 20px 50px;
+                border-radius: 30px;
+                border: solid 1px $color-yellow;
+                outline: none;
+                position: relative;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.4;
+                font-family: 'Inter', sans-serif; /* Use 'Inter' font for text */
+
+                &::placeholder {
+                    position: absolute;
+                    left: 20px;
+                }
+
+                &::before {
+                    font-family: 'Font Awesome 5 Free';
+                    content: '\f0e0'; /* Unicode for the envelope icon */
+                    position: absolute;
+                    left: 10px;
+                    font-weight: 900; /* Adjust the weight if needed */
+                }
+            }
+
+            .footer_top-question-input-holder {
+                position: absolute;
+                left: 52px;
+                top: 15px;
+                z-index: 0;
+                font-weight: 400;
+                font-size: 13px;
+                color: $color-placeholder;
+                pointer-events: none;
+                transition: all 0.2s ease-in;
+            }
+
+            .footer_top-question-input:focus + .footer_top-question-input-holder {
+                top: -17px;
+                background-color: $color-white;
+                color: $color-yellow;
+                font-weight: 500;
+                padding: 5px 10px 5px;
+                border: 1px solid $color-yellow;
+                border-radius: 10px;
+            }
+
+            .footer_top-question-btn {
+                position: absolute;
+                padding: 12px 20px;
+                border-radius: 30px;
+                background: $color-yellow;
+                transform: translateX(-110px) translateY(6px);
+
+                color: $color-white !important;
+                font-weight: 700;
+                font-size: 11px;
+                text-align: center;
+                @include customBoxShadow;
+            }
+        }
+
+    }
+
+.footer__bottom{
+    .footer_top-nav-list{
+        padding: 35px 0;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 25px;
+        .footer_top-nav-link{
+            color: $color-white !important;
+            @include customHoverEffect;
+        }
+    }
+    .footer_inner-bottom-copy{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer_inner-bottom-copy_social{
+            img{
+                padding-right: 20px;
+            }
+        }
+        .footer_inner-bottom-copy-yaer{
+            font-weight: 400;
+            font-size: 14px;
+            text-align: right;
+            color: rgba(255, 255, 255, 0.6);
+            position: relative;
+            &:before{
+                content: '©';
+                position: absolute;
+                left: -15px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

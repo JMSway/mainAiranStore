@@ -1,0 +1,17 @@
+.coverage{
+    margin-bottom: 56px;
+}
+.coverage_inner{
+    height: 251px;
+    @include customBoxShadowCard;
+    background-image: url('../../img/coverage/bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    h3,
+    p,
+    a{
+        position: relative;
+        left: 28px;
+        top: 28px;
+    }
+}

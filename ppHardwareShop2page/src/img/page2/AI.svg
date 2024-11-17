@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="375" height="375" viewBox="0 0 375 375">
+<defs>
+<clipPath id="clip_0">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z" fill-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_1">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z" fill-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z" fill-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M472.64573 838.0383H780.4212V1136.9866H472.64573Z" fill-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z" fill-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M209.84108 578.19998H517.6166V877.1482H209.84108Z" fill-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M548.8213 594.1055H626.9463V647.2305H548.8213Z" fill-rule="evenodd"/>
+</clipPath>
+<clipPath id="clip_7">
+<path transform="matrix(.24,0,0,.24,0,0)" d="M0 0H1562.5V1562.5H0Z" fill-rule="evenodd"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_0)">
+<path transform="matrix(.75,0,0,.75,0,0)" d="M0 0H500V500H0Z" fill="#ffffff"/>
+</g>
+<g clip-path="url(#clip_1)">
+<path transform="matrix(.75,0,0,.75,0,0)" d="M0 0H500V500H0Z" fill="#292727"/>
+</g>
+<g clip-path="url(#clip_2)">
+<text fill="#b48f57" xml:space="preserve" transform="matrix(.80493578 0 0 .80493578 101.40531 143.57631)" font-size="108.73" font-family="BrownSugar"><tspan y="98" x="41.359376">I</tspan></text>
+</g>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.2885395,0,0,.28026397,113.43497,201.1292)" d="M0 0H256V256H0Z" fill="#292727"/>
+</g>
+<g clip-path="url(#clip_4)">
+<text fill="#b48f57" xml:space="preserve" transform="matrix(.75 0 0 .75 160.9993 126.05087)" font-size="108.73" font-family="BrownSugar"><tspan y="98" x="0">R</tspan></text>
+</g>
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.2885395,0,0,.28026397,50.36186,138.76799)" d="M0 0H256V256H0Z" fill="#292727"/>
+</g>
+<g clip-path="url(#clip_6)">
+<path transform="matrix(0,-.06545378,.06725251,0,131.7171,155.31397)" d="M196.7 266.8H197.09999C179.9 274.19999 161 278.3 141 278.3 63.5 278.3 .5 216 .5 139.4 .5 62.7 63.5 .5 141 .5 164.1 .5 185.8 6 205 15.8 202.2 15.6 199.5 15.5 196.7 15.5 127.799999 15.5 71.899997 71.8 71.899997 141.2 71.9 210.5 127.9 266.8 196.7 266.8Z" fill="#d8cbc4" fill-rule="evenodd"/>
+<path transform="matrix(0,-.06545378,.06725251,0,131.7171,155.31397)" d="M205.3 15.3C185.2 5.1 163.6 0 141 0 63.3 0 0 62.5 0 139.4 0 216.29999 63.3 278.8 141 278.8 160.6 278.8 179.5 274.9 197.3 267.19999 197.5 267.09999 197.6 266.9 197.6 266.59999 197.6 266.39997 197.3 266.19999 197.1 266.19999H196.70001C128.1 266.19999 72.40001 210.09998 72.40001 141.09998 72.40001 72.099979 128.20001 15.899979 196.70001 15.899979 199.40001 15.899979 202.20001 15.999979 205.00002 16.199978 205.20001 16.199978 205.40001 16.099978 205.50002 15.799978 205.6 15.6 205.5 15.4 205.3 15.3ZM196.7 15C127.6 15 71.4 71.6 71.4 141.1 71.4 210 126.5 266.1 194.70001 267.2 177.70001 274.2 159.6 277.7 141.00002 277.7 63.80002 277.7 1.0000153 215.6 1.0000153 139.30002 1 63.1 63.8 1 141 1 162.6 1 183.4 5.8 202.7 15.1 200.7 15 198.7 15 196.7 15Z" fill="#d8cbc4"/>
+</g>
+<g clip-path="url(#clip_7)">
+<text fill="#b48f57" xml:space="preserve" transform="matrix(.8108704 0 0 .8108704 51.858118 121.69865)" font-size="108.73" font-family="BrownSugar"><tspan y="98" x="28.890625">A</tspan></text>
+<text fill="#d8cbc4" xml:space="preserve" transform="matrix(.666665 0 0 .666665 103.94932 209.15557)" font-size="12" font-family="ABeeZee"><tspan y="12" x="3.859375 18.151425 31.915474 46.207525 60.967576 75.13962 90.175678 106.93974 123.0318 133.96382 148.72388 163.17194 174.40396 188.85202 203.02407 219.78813 234.82419">ELECTRONICS STORE</tspan></text>
+<text fill="#b48f57" xml:space="preserve" transform="matrix(.75 0 0 .75 221.10286 125.366)" font-size="108.73" font-family="BrownSugar"><tspan y="98" x="0 69.579929">AN</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,1042 @@
+﻿*{padding:0;margin:0;border:none}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}ul,ul li{list-style:none}button{border:none;padding:0;border-radius:0;cursor:pointer;outline:none}@font-face{font-family:"Inter",sans-serif;src:url("./../fonts/Inter-Regular.ttf") format("ttf");font-style:normal;font-weight:400}@font-face{font-family:"Inter",sans-serif;src:url("./../fonts/Inter-Medium.ttf") format("ttf");font-style:normal;font-weight:500}@font-face{font-family:"Inter",sans-serif;src:url("./../fonts/Inter-Bold.ttf") format("ttf");font-style:normal;font-weight:700}@font-face{font-family:"Inter",sans-serif;src:url("./../fonts/Inter-ExtraBold.ttf") format("ttf");font-style:normal;font-weight:600}html,body{height:100%}body{font-family:"Inter",sans-serif;font-weight:400;font-size:16px;line-height:1.4}a{text-decoration:none;color:inherit}.container{min-height:100%;display:flex;flex-direction:column}.main{flex-grow:1}.wrapper{max-width:1380px;padding:0 30px;margin:0 auto}.title-h5{font-weight:500;font-size:18px;color:#000}.title-h3{font-weight:500;font-size:28px}.title-h3_showMore{font-weight:600;font-size:18px;color:#f0ba4e;position:relative}.title-h3_showMore::before{content:"";bottom:-9px;left:0;width:0;position:absolute;height:2px;background-color:#4b565e !important;transition:width .3s ease-in-out}.title-h3_showMore:hover::before{width:100%}.product_top-text{display:flex;justify-content:space-between;align-items:center}.title-h6{font-weight:600;font-size:20px;color:#3c3c3b;padding-bottom:9px}.product-article{font-weight:500;font-size:16px;color:#3c3c3b;padding-bottom:21px}.cost-piece{font-weight:500;font-size:16px;color:#a1a0a0;padding-bottom:9px}.cost-price{font-weight:600;font-size:20px;color:#3c3c3b}.cost-old-price{font-weight:600;font-size:16px;text-decoration:line-through;color:#3c3c3b;margin-right:15px}.button_addBasket{font-weight:500;font-size:14px;color:#3c3c3b;border:1px solid #f0ba4e;border-radius:54px;padding:14px 28px;width:135px;height:47px;background-color:rgba(0,0,0,0)}.button_addBasket:active{scale:105%}.burger_menu{display:none;background:rgba(0,0,0,0);border-radius:50%;width:40px;height:40px;position:relative;cursor:pointer;transition:all .1s ease-in}.burger_menu:hover{background:#a1a0a0}.burger_menu span{position:absolute;width:16px;height:2px;background:#000;bottom:15px;right:12px;border-radius:3px}.burger_menu span:nth-child(1){top:14px}.header_top{background:#4b565e}.header_top .header_top-inner{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.header_top .header_top-inner .logo_nav{display:flex;align-items:center;justify-content:center}.header_top .header_top-inner .logo_nav .logo{padding-right:40px}.header_top .header_top-inner .logo_nav .header_top-nav .header_top-nav-list{display:flex;gap:25px;padding-right:10px}.header_top .header_top-inner .logo_nav .header_top-nav .header_top-nav-list .header_top-nav-title .header_top-nav-link{position:relative;color:#f9fafb;font-weight:600}.header_top .header_top-inner .logo_nav .header_top-nav .header_top-nav-list .header_top-nav-title .header_top-nav-link::before{content:"";bottom:-9px;left:0;width:0;position:absolute;height:2px;background-color:#f0ba4e !important;transition:width .3s ease-in-out}.header_top .header_top-inner .logo_nav .header_top-nav .header_top-nav-list .header_top-nav-title .header_top-nav-link:hover::before{width:100%}.header_top .header_top-inner .header-inner-top-info{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:40px}.header_top .header_top-inner .header-inner-top-info a:first-child{position:relative;padding:5px 0 5px 5px;font-weight:500;color:#f9fafb !important}.header_top .header_top-inner .header-inner-top-info a:first-child::before{content:"";bottom:-9px;left:0;width:0;position:absolute;height:2px;background-color:#f0ba4e !important;transition:width .3s ease-in-out}.header_top .header_top-inner .header-inner-top-info a:first-child:hover::before{width:100%}.header_top .header_top-inner .header-inner-top-info a:nth-child(2){padding:5px}.header_top .header_top-inner .header-inner-top-info .header-inner-top-info-btn{padding:10px;border-radius:50px;display:flex;justify-content:center;align-items:center;gap:13px;background:rgba(0,0,0,0);border:1px solid #f0ba4e;transition:box-shadow .3s ease-in-out}.header_top .header_top-inner .header-inner-top-info .header-inner-top-info-btn:hover{box-shadow:0 4px 8px rgba(0,0,0,.3)}.header_top .header_top-inner .header-inner-top-info .header-inner-top-info-btn img{background:rgba(0,0,0,0)}.header_top .header_top-inner .header-inner-top-info .header-inner-top-info-btn span{color:#f9fafb;font-weight:500}.header_bottom{background:#f0ba4e}.header_bottom .header_bottom-inner{display:flex;justify-content:space-between;align-items:center;padding:19px 0}.header_bottom .header_bottom-inner .header_bottom-nav .header_bottom-list{display:flex;justify-content:center;align-items:center;gap:25px;padding-left:26px}.header_bottom .header_bottom-inner .header_bottom-nav .header_bottom-list .header_bottom-link{position:relative;font-weight:600;font-size:14px;color:#3c3c3b}.header_bottom .header_bottom-inner .header_bottom-nav .header_bottom-list .header_bottom-link::before{content:"";bottom:-9px;left:0;width:0;position:absolute;height:2px;background-color:#4b565e !important;transition:width .3s ease-in-out}.header_bottom .header_bottom-inner .header_bottom-nav .header_bottom-list .header_bottom-link:hover::before{width:100%}.header_bottom .header_bottom-inner .header_bottom-nav .header_bottom-list .header_bottom-link-before{position:relative}.header_bottom .header_bottom-inner .header_bottom-nav .header_bottom-list .header_bottom-link-before::before{content:"";position:absolute;background-image:url(./../img/svg/burger-bottom.svg);background-repeat:no-repeat;background-color:rgba(0,0,0,0) !important;top:-4px;left:-21px;width:16px;height:26px}.header_bottom .header_bottom-inner .header_bottom-right-content{display:flex;align-items:center;justify-content:center;gap:40px}.header_bottom .header_bottom-inner .header_bottom-right-content a:last-child{position:relative}.header_bottom .header_bottom-inner .header_bottom-right-content a:last-child::before{content:"";position:absolute;background-image:url("./../img/svg/map-pin.svg");background-repeat:no-repeat;width:12px;height:12px;left:-15px;top:5px}.header_bottom .header_bottom-inner .header_bottom-right-content .header_bottom{width:400px;height:28px}.header_bottom .header_bottom-inner .header_bottom-right-content .header_bottom .header_bottom-input{width:399px;height:27px;background-color:rgba(0,0,0,0);outline:none;border-bottom:1px solid #3c3c3b;padding-right:40px;position:relative;font-weight:400;font-size:16px}.header_bottom .header_bottom-inner .header_bottom-right-content .header_bottom .header_bottom-input::placeholder{font-weight:400;font-size:16px;color:rgba(75,86,94,.6)}.header_bottom .header_bottom-inner .header_bottom-right-content .header_bottom .header_bottom-btn{position:absolute;background:rgba(0,0,0,0);transform:translateX(-35px);padding:0 10px 5px 10px}@media(max-width: 375px){.burger_menu{display:block}.mobile{display:none}.header-inner-top-info-btn{border:none}}.main_title{height:100vh;background-image:url("./../img/main_title/bg.jpg");background-position:center;background-size:cover;background-repeat:no-repeat}.main_title-inner{display:flex;align-items:center;height:100%;transform:translateY(257px)}.title-h1{padding:0 10px;width:540px;font-weight:700;font-size:40px;line-height:140%;color:#f0ba4e}.assortment{padding:25px 0 60px}.assortment-inner{display:flex;flex-wrap:nowrap;justify-content:space-between;align-items:center;gap:28px}.assortment_cards{display:flex;justify-content:center;align-items:center;gap:16px}.assortment_cards-text{font-weight:500;font-size:18px;color:#a1a0a0}.catalog{margin-bottom:60px}.catalog .catalog-page{display:flex;justify-content:end;align-items:end;gap:16px;margin-bottom:20px;cursor:pointer}.catalog .catalog-page .catalog-page-active{color:#f0ba4e}.catalog .catalog_inner{display:grid;grid-template-columns:repeat(3, 420px);grid-template-rows:repeat(2, 214px);gap:28px}.catalog .catalog_inner-card{box-shadow:0 20px 50px 0 rgba(60,60,59,.07);transition:box-shadow .2s ease-in-out}.catalog .catalog_inner-card:hover{box-shadow:0 20px 50px 0 rgba(60,60,59,.1)}.catalog .catalog_inner-card:active{box-shadow:0 20px 50px 0 rgba(60,60,59,.1)}.catalog .catalog_inner-card-link{display:flex;justify-content:center;align-items:center;gap:10px}.catalog .catalog_inner-card-link p{font-weight:400;font-size:14px;color:#3c3c3b}.catalog .catalog_inner-sec1{grid-row:1/-1;position:relative;background-image:url("./../img/catalog/card1.png");background-repeat:no-repeat;background-position:bottom left}.catalog .catalog_inner-sec1 .title-h2{position:relative;top:20px;left:16px}.catalog .catalog_inner-sec1 .catalog_inner-card-link{position:absolute;bottom:15px;right:15px}.catalog .catalog_inner-sec2{position:relative;background-image:url("./../img/catalog/card2.png");background-repeat:no-repeat;background-position:bottom left}.catalog .catalog_inner-sec2 .title-h2{;top:20px;left:325px}.catalog .catalog_inner-sec2 .catalog_inner-card-link-min{position:absolute;bottom:15px;right:15px}.catalog .catalog_inner-sec3{background-image:url("./../img/catalog/card4.png");background-repeat:no-repeat;background-position:bottom right;position:relative}.catalog .catalog_inner-sec3 .title-h2{width:220px;position:relative;top:20px;left:16px}.catalog .catalog_inner-sec3 .catalog_inner-card-link-min{position:absolute;bottom:15px;left:15px}.catalog .catalog_inner-sec4{background-image:url("./../img/catalog/card3.png");background-repeat:no-repeat;background-position:bottom right;position:relative}.catalog .catalog_inner-sec4 .title-h2{position:relative;top:20px;left:16px;width:220px}.catalog .catalog_inner-sec4 .catalog_inner-card-link-min{position:absolute;bottom:15px;left:15px}.catalog .catalog_inner-sec5{background-image:url("./../img/catalog/card5.png");background-repeat:no-repeat;background-position:bottom left;position:relative}.catalog .catalog_inner-sec5 .title-h2{position:relative;top:20px;left:16px}.catalog .catalog_inner-sec5 .catalog_inner-card-link-min{position:absolute;bottom:15px;right:15px}.popular_product{margin-bottom:55px}.popular_product-list{display:flex;justify-content:space-between;align-items:center;gap:29px}.product_top-text{margin-bottom:35px}.popular_product-card{box-shadow:0 20px 50px 0 rgba(60,60,59,.07);transition:box-shadow .2s ease-in-out;padding:24px 24px;position:relative}.popular_product-card:hover{box-shadow:0 20px 50px 0 rgba(60,60,59,.1)}.popular_product-card:active{box-shadow:0 20px 50px 0 rgba(60,60,59,.1)}.popular_product-card .popular_product-card-choose{margin-top:23px}.popular_product-card_activeSale{display:block;border-radius:61px;padding:10px 20px;width:54px;height:39px;background-color:#fa5d69;color:#f9fafb;text-align:center;font-weight:600;font-size:16px;position:absolute;top:24px;left:24px}.popular_product-card-choose{display:flex;justify-content:space-between;align-items:center}.popular_product-card-choose .popular_product-card-choose_count p{font-weight:500;font-size:16px;color:#3c3c3b;margin-bottom:8px}.popular_product-card-choose .popular_product-card-choose_count span:not(:nth-last-child(1)){padding-right:7px}.popular_product-card-addProductNew .popular_product-card-new{position:absolute;top:24px;left:24px;border-radius:54px;padding:10px 20px;width:109px;height:39px;color:#f9fafb;background:#08c785;text-align:center}.popular_product-card-addProductTwice .popular_product-card_activeSale{top:70px}.coverage{margin-bottom:56px}.coverage_inner{height:251px;box-shadow:0 20px 50px 0 rgba(60,60,59,.07);transition:box-shadow .2s ease-in-out;background-image:url("../../img/coverage/bg.png");background-repeat:no-repeat;background-position:right}.coverage_inner:hover{box-shadow:0 20px 50px 0 rgba(60,60,59,.1)}.coverage_inner:active{box-shadow:0 20px 50px 0 rgba(60,60,59,.1)}.coverage_inner h3,.coverage_inner p,.coverage_inner a{position:relative;left:28px;top:28px}.footer{background:#4b565e;padding:35px 0}.footer .footer__top{padding-bottom:35px;border-bottom:1px solid #566169}.footer_inner-top{display:flex;justify-content:space-between;align-items:center;position:relative}.footer_inner-top .footer-section1-info-mail{display:flex}.footer_inner-top .footer_line{position:absolute;right:50%;width:1px;height:240px;background:#566169;z-index:10}.footer_inner-top .footer_top-contact img{padding-bottom:40px}.footer_inner-top .footer_top-contact-list{display:flex;justify-content:center;align-items:center;gap:92px}.footer_inner-top .footer_top-contact-tel{display:flex;flex-direction:column;padding-left:35px;gap:8px 0}.footer_inner-top .footer_top-contact-tel span{font-weight:400;font-size:12px;color:rgba(255,255,255,.6);position:relative}.footer_inner-top .footer_top-contact-tel span::before{content:"";position:absolute;background-image:url("./../img/svg/phone-active.svg");background-repeat:no-repeat;background-size:contain;height:24px;width:24px;left:-32px;top:-5px}.footer_inner-top .footer_top-contact-tel .footer_top-contact-num{color:#f9fafb}.footer_inner-top .footer_top-contact-mail{display:flex;flex-direction:column;gap:8px 0}.footer_inner-top .footer_top-contact-mail span{font-weight:400;font-size:12px;color:rgba(255,255,255,.6);position:relative}.footer_inner-top .footer_top-contact-mail span::before{content:"";position:absolute;background-image:url("./../img/svg/mail.svg");background-repeat:no-repeat;background-size:contain;height:24px;width:24px;left:-32px;top:-5px}.footer_inner-top .footer_top-contact-mail .footer_top-contact-mail1{color:#f9fafb}.footer_top-question .title-h4{font-weight:700;font-size:18px;color:#f9fafb}.footer_top-question p{margin:20px 0 35px;max-width:540px;font-size:14px;line-height:171%;color:rgba(255,255,255,.6)}.footer_top-question .footer_top-question-form{position:relative}.footer_top-question .footer_top-question-form .footer_top-question-input{width:100%;height:48px;padding:20px 150px 20px 50px;border-radius:30px;border:solid 1px #f0ba4e;outline:none;position:relative;font-weight:400;font-size:16px;line-height:1.4;font-family:"Inter",sans-serif}.footer_top-question .footer_top-question-form .footer_top-question-input::placeholder{position:absolute;left:20px}.footer_top-question .footer_top-question-form .footer_top-question-input::before{font-family:"Font Awesome 5 Free";content:"";position:absolute;left:10px;font-weight:900}.footer_top-question .footer_top-question-form .footer_top-question-input-holder{position:absolute;left:52px;top:15px;z-index:0;font-weight:400;font-size:13px;color:rgba(75,86,94,.6);pointer-events:none;transition:all .2s ease-in}.footer_top-question .footer_top-question-form .footer_top-question-input:focus+.footer_top-question-input-holder{top:-17px;background-color:#f9fafb;color:#f0ba4e;font-weight:500;padding:5px 10px 5px;border:1px solid #f0ba4e;border-radius:10px}.footer_top-question .footer_top-question-form .footer_top-question-btn{position:absolute;padding:12px 20px;border-radius:30px;background:#f0ba4e;transform:translateX(-110px) translateY(6px);color:#f9fafb !important;font-weight:700;font-size:11px;text-align:center;transition:box-shadow .3s ease-in-out}.footer_top-question .footer_top-question-form .footer_top-question-btn:hover{box-shadow:0 4px 8px rgba(0,0,0,.3)}.footer__bottom .footer_top-nav-list{padding:35px 0;display:flex;justify-content:start;align-items:center;gap:25px}.footer__bottom .footer_top-nav-list .footer_top-nav-link{color:#f9fafb !important;position:relative}.footer__bottom .footer_top-nav-list .footer_top-nav-link::before{content:"";bottom:-9px;left:0;width:0;position:absolute;height:2px;background-color:#f0ba4e !important;transition:width .3s ease-in-out}.footer__bottom .footer_top-nav-list .footer_top-nav-link:hover::before{width:100%}.footer__bottom .footer_inner-bottom-copy{display:flex;justify-content:space-between;align-items:center}.footer__bottom .footer_inner-bottom-copy .footer_inner-bottom-copy_social img{padding-right:20px}.footer__bottom .footer_inner-bottom-copy .footer_inner-bottom-copy-yaer{font-weight:400;font-size:14px;text-align:right;color:rgba(255,255,255,.6);position:relative}.footer__bottom .footer_inner-bottom-copy .footer_inner-bottom-copy-yaer:before{content:"©";position:absolute;left:-15px }
+/* Стили для всплывающей формы */
+.popup-form {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-form-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Центр и увел кнопку подписки */
+.subscribe-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1000;
+    display: block;
+    text-align: center;
+}
+
+.subscribe-btn:hover {
+    background-color: #444;
+}
+/* Центрирование контейнера с кнопками */
+.centered-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Центрирование контейнера с кнопками */
+.centered-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    gap: 20px;
+}
+
+.mode-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* space between buttons */
+    margin-top: 20px; /* add some spacing above */
+}
+
+#subscribe {
+    /* Additional styling if needed */
+}
+
+
+/* Стили для кнопки "Сменить фон" */
+.color-change-btn {
+    padding: 20px 40px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.specific-section {
+    background-color: inherit;
+}
+.rating, .rating .star {
+    background-color: inherit !important;
+}
+
+
+.subscribe-btn, .color-change-btn {
+    display: inline-block;
+    margin: 0;
+}
+
+
+/* Стили для часто задаваемых вопросов (FAQ) */
+.faq-section {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f0a500;
+    margin-bottom: 20px;
+}
+
+.faq-section .question {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #444;
+    color: #f0a500;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.faq-section .question:hover {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.faq-section .answer {
+    display: none;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 4px;
+    color: #ffff;
+}
+
+/* Дата и время */
+.date-time-section {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Смена фона */
+.color-change-section {
+    margin-top: 20px;
+}
+
+/* еще стили для кнопки подписки */
+.subscribe-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.subscribe-btn:hover {
+    background-color: #444;
+}
+
+/* Стили для всплывающей формы */
+.popup-form {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#load-more {
+    display: block;
+    margin: 20px auto; /* Центрируем кнопку горизонтально */
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+#load-more:hover {
+    background-color: #d48806;
+}
+
+.popup-form-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #333; /* Цвет фона - темный */
+    color: #f0a500; /* Цвет текста - желтый */
+    padding: 20px; /* Внутренние отступы */
+    text-align: center; /* Центрирование текста */
+}
+
+.footer a {
+    color: #f0a500; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.footer a:hover {
+    color: #ffffff; /* Цвет ссылок при наведении - белый */
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Устанавливаем box-sizing для всех элементов */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;  /* Убираем padding */
+    margin: 0;   /* Убираем margin */
+}
+
+.con {
+    max-width: 100%;  /* Контейнер занимает всю ширину */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;  /* Добавляем внутренний отступ */
+    background-color: #fff;  /* Добавляем фон для видимости */
+    border: 1px solid #ccc;  /* Добавляем границу */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Анимация появления контейнера */
+}
+
+/* Стили для рейтинга звёзд */
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: gray; /* Цвет звезды по умолчанию */
+}
+
+.rating .star.selected {
+    color: gold; /* Цвет для выбранных звёзд */
+}
+
+/* Темный режим для звезд */
+body.dark-mode .star {
+    color: #888; /* Цвет звёзд в темном режиме */
+}
+
+body.dark-mode .star.selected {
+    color: #ffd700; /* Золотой цвет для выбранных звёзд в темном режиме */
+}
+
+.centered-buttons {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 10px; /* Расстояние между кнопками */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f0c040;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0a030;
+}
+
+#content {
+    text-align: center;
+    margin-top: 10px; /* Добавляет небольшой отступ сверху для визуального разделения */
+    animation: fadeIn 1s ease-in-out; /* Анимация появления контейнера */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ffff;
+}
+.text-p{
+    font-size: 1.1rem;
+    color: #555;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1 {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Анимация появления контейнера */
+}
+h1 + div {
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out; /* Анимация появления контейнера */
+}
+h1 + div + div {
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out; /* Анимация появления контейнера */
+}
+
+/* Стили для фактов */
+#facts-container p {
+    color: #333; /* Убедитесь, что цвет контрастирует с фоном светлого режима */
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+/* Стили для контейнера с фактами, чтобы он был по центру */
+.centered-facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto; /* Отступы для центрирования */
+    max-width: 600px; /* Ограничение ширины, чтобы текст был читаемым */
+    padding: 10px; /* Внутренний отступ для комфортного пространства */
+    background-color: #f0f0f0; /* Цвет фона для улучшенной видимости */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для улучшенной визуализации */
+}
+
+/* Стили для темного режима для контейнера с фактами */
+body.dark-mode .centered-facts {
+    background-color: #333; /* Тёмный фон для тёмного режима */
+    color: #fff; /* Белый цвет текста для улучшенной видимости */
+}
+
+/* Дополнительные стили для тёмного режима, если нужно изменить цвет текста */
+body.dark-mode #facts-container p {
+    color: #fff; /* Белый цвет для лучшей видимости в тёмном режиме */
+}
+
+#time {
+    color: #333; /* Тёмный цвет для светлого режима */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Стили для тёмного режима */
+body.dark-mode #time {
+    color: #fff; /* Белый цвет для лучшей видимости в тёмном режиме */
+}
+
+/* Светлая тема (по умолчанию)  */
+body.light-mode {
+    background-color: white;
+    color: black;
+    animation: fadeIn 1s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+
+body.dark-mode {
+    background-color: #2b2b2b;  /* Сделаем фон немного светлее */
+    color: #eaeaea;  /* Светло-серый цвет для текста */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.faq-section {
+    background-color: #444;  /* Более светлый фон для раздела FAQ */
+    color: #f0a500;
+}
+
+.faq-section .question {
+    background-color: #555;  /* Светлее для контраста */
+}
+
+.faq-section .answer {
+    background-color: #444;
+    color: #f9fafb;  /* Светлый текст */
+}
+
+.popup-form-content {
+    background-color: #333;  /* Сделаем форму менее контрастной */
+    color: #f0a500;
+}
+
+#login-container, #profile-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*для глазика*/
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    padding-right: 40px; /* Добавляем место для иконки */
+    box-sizing: border-box;
+}
+
+.eye-icon {
+    position: fixed;
+    right: 10px; /* Отступ от правого края поля */
+    margin-top: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    opacity: 0.8; /* Чуть прозрачная иконка */
+}
+
+.eye-icon:hover {
+    opacity: 1; /* Полностью видимая при наведении */
+}
+
+}
+
+.submit-button {
+    background-color: #f0b746;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #e6a832;
+}
+
+
+button {
+    background-color: #f0a500;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #d48806;
+}
+
+#filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px; /* Устанавливаем ширину для кнопок */
+    animation: fadeIn 1s ease-in-out;
+}
+
+button {
+    background-color: #f0a500;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #d48806;
+}
+
+
+
+/* Основные цвета */
+:root {
+    --primary-color: #f0a500;
+    --secondary-color: #333;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Arial', sans-serif;
+}
+
+/* Стили для всего тела страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Текстовые стили */
+p {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #d48806;
+}
+
+
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+
+    #filter-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.button_addBasket {
+    position: relative;
+    overflow: hidden;
+}
+
+.button_addBasket::after {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transition: transform 0.5s ease-out;
+}
+
+.button_addBasket:active::after {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0s;
+}
+button {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.color-change-btn, .subscribe-btn {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.color-change-btn:hover, .subscribe-btn:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+button {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #d48806; /* Цвет при наведении */
+    color: #fff; /* Цвет текста при наведении */
+}
+/* Стили для блока погоды */
+#weather-container {
+    background-color: #f0ba4e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 90%;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #293133;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-button {
+
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #e55b00;
+}
+
+.error-message {
+    font-size: 14px;
+    color: red;
+}
+
+.password-container {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+/* Кнопка отправки */
+.submit-button {
+    background-color: #f0b746;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+.submit-button:hover {
+    background-color: #e6a832;
+}
+
+
+.button-group {
+    display: flow;
+    gap: 15px; /* Расстояние между кнопками */
+    justify-content: center; /* Центрирование кнопок */
+    margin-top: 15px; /* Отступ сверху */
+}
+
+.cabinet-button, button {
+    animation: fadeIn 1s ease-in-out;
+    background-color: #ffcc00;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Отступы внутри кнопок */
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button {
+    background-color: #ffcc00;; /* Цвет для кнопки Logout */
+}
+
+.cabinet-button:hover, button:hover {
+    background-color: #e6a832; /* Цвет кнопки при наведении */
+}
+
+.theme-light {
+    background-color: white;
+    color: black;
+
+}
+
+.theme-dark {
+    background-color: #333;
+    color: white;
+}
+
+/* Стили для полей ввода в форме */
+.input-field {
+    color: black; /* Цвет текста внутри поля */
+    background-color: white; /* Цвет фона */
+    border: 1px solid #ccc; /* Границы */
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    outline: 2px solid transparent; /* Контур по умолчанию */
+    transition: outline 0.3s ease; /* Плавное появление контура */
+}
+
+.input-field:focus {
+    outline: 2px solid #ffa500; /* Оранжевый контур при фокусе */
+    border-color: #ffa500; /* Меняем цвет границы для фокуса */
+}
+
+/* Для темного режима */
+body.dark-mode .input-field {
+    color: white; /* Белый текст */
+    background-color: #333; /* Темный фон */
+    border-color: #666; /* Граница */
+    outline: 2px solid #666; /* Контур для темного режима */
+}
+
+body.dark-mode .input-field:focus {
+    outline: 2px solid #ffa500; /* Оранжевый контур в темном режиме */
+    border-color: #ffa500; /* Оранжевая граница */
+}
+
+
+
+}
+
+.password-container img {
+    filter: invert(0); /* Обычный цвет */
+    cursor: pointer;
+}
+
+.theme-dark .password-container img {
+    filter: invert(1); /* Инверсия цвета для темной темы */
+}
+
+.button-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.centered-buttons {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.subscribe-btn {
+    background-color: #ffcc00;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #e0b800;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+.theme-light {
+    background-color: white;
+    color: black;
+
+}
+
+.theme-dark {
+    background-color: #333;
+    color: white;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-container img {
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.centered-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#light-mode {
+    background-color: #ffcc00;
+    color: #333;
+
+}
+
+#dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Существующие стили для тёмного режима */
+body.dark-mode {
+    background-color: #333; /* Темный фон для тёмного режима */
+    color: #ffffff; /* Белый текст для тёмного режима */
+}
+
+body.dark-mode input, body.dark-mode .input-field {
+    background-color: #555; /* Темнее фон для текстовых полей */
+    color: #ffffff; /* Белый текст для полей ввода */
+    border-color: #777; /* Немного светлее граница для видимости */
+}
+
+body.dark-mode .password-container img {
+    filter: invert(100%); /* Обеспечивает видимость иконок в тёмном режиме */
+}
+
+/* Убедитесь, что метки также видны */
+body.dark-mode label {
+    color: #ffffff;
+}
+
+
+.button-group {
+    display: flow;
+    gap: 10px; /* Расстояние между кнопками */
+    justify-content: center; /* Центрирование кнопок */
+    margin-top: 15px; /* Отступ сверху */
+}
+
+.cabinet-button, .logout-button {
+    display: inline-block;
+    background-color: #e67e22; /* Оранжевый цвет */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Отступы внутри кнопок */
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    width: 120px; /* Фиксированная ширина для одинакового размера */
+    height: 40px; /* Фиксированная высота */
+    line-height: 20px; /* Выравнивание текста по центру */
+}
+
+.cabinet-button:hover, .logout-button:hover {
+    background-color: #d35400; /* Цвет кнопки при наведении */
+}
+
+
+/* Светлая тема */
+.light-mode {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.dark-mode {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+
+/* Стили для кнопок */
+.mode-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mode-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#light-mode-btn {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+#dark-mode-btn {
+    background-color: #555;
+    color: white;
+}

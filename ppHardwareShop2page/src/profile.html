@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль пользователя</title>
+  <link rel="stylesheet" href="css/profile.css"> <!-- Подключение CSS файла -->
+</head>
+<body>
+
+<!-- Верхняя навигационная панель -->
+<header class="header">
+  <div class="header_top">
+    <div class="wrapper">
+      <div class="header_top-inner">
+        <div class="logo_nav">
+          <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+          <nav class="header_top-nav">
+            <ul class="header_top-nav-list">
+              <li><a href="index.html" class="header_top-nav-link">Главная</a></li>
+              <li><a href="3page.html" class="header_top-nav-link">О компании</a></li>
+              <li><a href="2page.html" class="header_top-nav-link">Каталог</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-inner-top-info">
+          <a href="tel:+79650842929" class="phone-number">+7 (965) 084-29-29</a>
+          <a href="#" class="favorite-icon"><img src="img/svg/heart.svg" alt="heart"></a>
+          <button class="header-inner-top-info-btn" type="button">
+            <img src="img/svg/basket.svg" alt="basket">
+            <span>Пусто</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header_bottom">
+    <div class="wrapper">
+      <div class="header_bottom-inner">
+        <nav class="header_bottom-nav">
+          <ul class="header_bottom-list">
+            <li><a href="#" class="header_bottom-link">Стройматериалы</a></li>
+            <li><a href="#" class="header_bottom-link">Инструменты</a></li>
+            <li><a href="#" class="header_bottom-link">Электрика</a></li>
+            <li><a href="#" class="header_bottom-link">Интерьер и одежда</a></li>
+          </ul>
+        </nav>
+        <div class="header_bottom-right-content">
+          <form action="#" class="search-form">
+            <input type="text" class="header_bottom-input" placeholder="Поиск, например Круг зачистной">
+            <button class="header_bottom-btn">
+              <img src="http://localhost:63342/index.html/src/img/svg/magnifer.svg" alt="search">
+            </button>
+          </form>
+          <a href="#" class="city-link">Москва</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Основной контент страницы профиля -->
+<main>
+  <div class="profile-container">
+    <h1>Добро пожаловать в ваш профиль!</h1>
+    <div class="profile-card">
+      <img src="avatar.jpg" alt="Аватар пользователя" class="profile-avatar">
+      <h3>Имя пользователя: <span id="profile-username"></span></h3>
+      <p>Электронная почта: <span id="profile-email"></span></p>
+      <div class="profile-buttons">
+        <button class="profile-btn" onclick="editProfile()">Редактировать профиль</button>
+        <button class="profile-btn logout-btn" onclick="logout()">Выйти</button>
+      </div>
+      <!-- Кнопки для смены темы -->
+      <div class="mode-buttons">
+        <button id="light-mode-btn" class="mode-btn" onclick="setLightMode()">Light Mode</button>
+        <button id="dark-mode-btn" class="mode-btn" onclick="setDarkMode()">Dark Mode</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+  </div>
+
+</main>
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="wrapper">
+      <div class="footer-top-content">
+        <div class="footer-logo">
+          <img src="img/logo.svg" alt="EGE logo">
+        </div>
+        <div class="footer-contacts">
+          <h3>Контактный телефон</h3>
+          <p>+ 7 (812) 309-09-34</p>
+          <p>+ 7 (965) 084-29-29</p>
+          <h3>Электронная почта</h3>
+          <p>tustin78@mail.ru</p>
+          <p>info@tustin.ru</p>
+        </div>
+        <div class="footer-questions">
+          <h3>Остались вопросы?</h3>
+          <p>Узнавайте первыми о скидках, предложениях и событиях еженедельно в своем почтовом ящике. Отпишитесь в любое время одним щелчком мыши.</p>
+          <form class="footer-form">
+            <input type="email" placeholder="Введите свою почту" required>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrapper">
+      <nav class="footer-nav">
+        <a href="#">Главная</a>
+        <a href="#">О компании</a>
+        <a href="#">Каталог</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#"><img src="img/svg/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="img/svg/youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="img/svg/whatsapp.svg" alt="WhatsApp"></a>
+      </div>
+      <p>&copy; 2021-2022, EDE</p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  function logout() {
+    window.location.href = "index.html"; // Возвращение на главную страницу
+  }
+</script>
+
+<script src="scss/ppr.js"></script>
+</body>
+</html>
